@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_harga"
+            android:icon="@mipmap/ic_attach"
+            android:title="Harga Pasar" />
+        <item
+            android:id="@+id/nav_grafik"
+            android:icon="@mipmap/ic_graphic"
+            android:title="Grafik Perkembangan" />
+        <item
+            android:id="@+id/nav_transaksi"
+            android:icon="@mipmap/ic_shopping"
+            android:title="Transaksi" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_akun"
+                android:icon="@mipmap/ic_account"
+                android:title="Akun" />
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@mipmap/ic_info"
+                android:title="Info" />
+        </menu>
+    </item>
+
+</menu>
