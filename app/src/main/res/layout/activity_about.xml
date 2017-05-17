@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_about"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    tools:context="com.example.fikid.itschilliv3.About">
+
+
+        <ImageView
+            android:background="@color/dimgray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo"
+            android:id="@+id/imageView2"
+            android:layout_marginBottom="344dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="IT'S CHILLI adalah sistem informasi cabe yang bisa memudahkan petani untuk melihat harga cabe secara realtime dan mengetahui banyak informasi mengenai cabe"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="19sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="200dp" />
+
+    </RelativeLayout>
