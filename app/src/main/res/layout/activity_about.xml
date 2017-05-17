@@ -5,6 +5,7 @@
         android:id="@+id/activity_about"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/tema"
     tools:context="com.example.fikid.itschilliv3.About">
 
 
@@ -22,7 +23,7 @@
         <TextView
             android:text="IT'S CHILLI adalah sistem informasi cabe yang bisa memudahkan petani untuk melihat harga cabe secara realtime dan mengetahui banyak informasi mengenai cabe"
             android:layout_width="wrap_content"
-            android:textColor="@color/black"
+            android:textColor="@color/colorAccent"
             android:textStyle="bold"
             android:textAlignment="center"
             android:textSize="19sp"
