@@ -14,8 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class ActivityMain extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+public class ActivityMain extends BaseApp implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,10 +82,10 @@ public class ActivityMain extends AppCompatActivity
 
         if (id == R.id.nav_harga) {
             startActivity(new Intent(getApplicationContext(), HargaMenu.class));
-        } else if (id == R.id.nav_grafik) {
+        } else if (id == R.id.nav_perbandingan) {
 
-        } else if (id == R.id.nav_transaksi) {
-
+        } else if (id == R.id.nav_berita) {
+            startActivity(new Intent(getApplicationContext(), DetailBerita.class));
         } else if (id == R.id.nav_akun) {
 
         } else if (id == R.id.nav_info) {
