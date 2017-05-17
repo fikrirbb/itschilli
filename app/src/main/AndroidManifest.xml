@@ -37,6 +37,9 @@
         <activity
             android:name=".HargaMenu"
             android:label="Harga Cabai" />
+        <activity
+            android:name=".About"
+            android:label="Tentang Kami" />
     </application>
 
 </manifest>

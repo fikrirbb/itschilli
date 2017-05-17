@@ -89,7 +89,7 @@ public class ActivityMain extends BaseApp implements NavigationView.OnNavigation
         } else if (id == R.id.nav_akun) {
 
         } else if (id == R.id.nav_info) {
-
+            startActivity(new Intent(getApplicationContext(), About.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
