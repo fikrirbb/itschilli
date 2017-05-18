@@ -21,7 +21,7 @@
             android:layout_alignParentStart="true" />
 
         <TextView
-            android:text="IT'S CHILLI adalah sistem informasi cabe yang bisa memudahkan petani untuk melihat harga cabe secara realtime dan mengetahui banyak informasi mengenai cabe"
+            android:text="IT'S CHILLI adalah sistem informasi cabe yang bisa memudahkan petani untuk melihat harga cabe secara realtime dan mengetahui banyak  menginformasikan mengenai harga cabai"
             android:layout_width="wrap_content"
             android:textColor="@color/colorAccent"
             android:textStyle="bold"
