@@ -20,7 +20,11 @@ public class About extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
+<<<<<<< HEAD
+        if (id == android.R.id.home) {
+=======
         if (id == android.R.id.home){
+>>>>>>> origin/master
             //end the activity
             this.finish();
         }
