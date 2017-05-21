@@ -5,33 +5,44 @@
         android:id="@+id/activity_about"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/tema"
     tools:context="com.example.fikid.itschilliv3.About">
 
 
+        <TextView
+        android:text="      IT'S CHILLI adalah sistem informasi cabe yang bisa memudahkan petani untuk melihat harga cabe secara realtime dan mengetahui banyak informasi mengenai cabe."
+        android:layout_width="wrap_content"
+        android:textAlignment="viewStart"
+        android:textSize="15sp"
+            android:layout_below="@+id/imageView2"
+        android:layout_height="wrap_content"
+        android:id="@+id/aboutTextView2"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
         <ImageView
-            android:background="@color/dimgray"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
             app:srcCompat="@drawable/logo"
             android:id="@+id/imageView2"
-            android:layout_marginBottom="344dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
             android:layout_alignParentStart="true" />
 
-        <TextView
-            android:text="IT'S CHILLI adalah sistem informasi cabe yang bisa memudahkan petani untuk melihat harga cabe secara realtime dan mengetahui banyak informasi mengenai cabe"
-            android:layout_width="wrap_content"
-            android:textColor="@color/colorAccent"
-            android:textStyle="bold"
-            android:textAlignment="center"
-            android:textSize="19sp"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView2"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="200dp" />
+    <TextView
+        android:text="Copyright 2017. IT's Chilli Developer. "
+        android:layout_width="match_parent"
+        android:textAlignment="textEnd"
+        android:textSize="15sp"
+        android:textColor="@color/tema"
+        android:layout_below="@+id/aboutTextView2"
+        android:layout_height="wrap_content"
+        android:id="@+id/aboutTextView3"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+         />
+
+
 
     </RelativeLayout>

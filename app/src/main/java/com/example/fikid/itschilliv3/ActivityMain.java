@@ -9,12 +9,17 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class ActivityMain extends BaseApp implements NavigationView.OnNavigationItemSelectedListener {
+import com.example.fikid.itschilliv3.AsyncTask.Helper;
+import com.example.fikid.itschilliv3.AsyncTask.SessionManager;
+
+import java.util.HashMap;
+
+public class ActivityMain extends Helper implements NavigationView.OnNavigationItemSelectedListener {
+    SessionManager sessionManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +27,9 @@ public class ActivityMain extends BaseApp implements NavigationView.OnNavigation
         setContentView(R.layout.activity_main2);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        sessionManager = new SessionManager(getApplicationContext());
+        HashMap<String, String> user = sessionManager.getUserDetails();
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -85,7 +93,7 @@ public class ActivityMain extends BaseApp implements NavigationView.OnNavigation
         } else if (id == R.id.nav_perbandingan) {
 
         } else if (id == R.id.nav_berita) {
-            startActivity(new Intent(getApplicationContext(), DetailBerita.class));
+            startActivity(new Intent(getApplicationContext(), ListBerita.class));
         } else if (id == R.id.nav_akun) {
 
         } else if (id == R.id.nav_info) {

@@ -7,4 +7,6 @@
     <color name="tema2">#2C3E50</color>
     <color name="dimgray">#696969</color>
     <color name="black">#000000</color>
+    <color name="hint_input">#999999</color>
+    <color name="btn_bg">#eceef1</color>
 </resources>
