@@ -29,7 +29,6 @@
         <activity
             android:name=".HargaMenu"
             android:label="Harga Cabai" />
-<<<<<<< HEAD
         <activity android:name=".BeritaDet" />
         <activity
             android:name=".ListBerita"
@@ -41,12 +40,9 @@
         <activity android:name=".RegisterActivity"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
-
-=======
         <activity
             android:name=".About"
             android:label="Tentang Kami" />
->>>>>>> origin/master
     </application>
 
 </manifest>
