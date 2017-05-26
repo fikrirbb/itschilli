@@ -9,51 +9,47 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/white"
     tools:context="com.example.fikid.itschilliv3.HargaMenu">
 
-    <TextView
-        android:text="TextView"
+    <RelativeLayout
+        android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView4"
-        tools:text="11.000,-"
-        android:textSize="40sp"
-        android:layout_toEndOf="@+id/textView3"
-        android:layout_below="@+id/textView2" />
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/txtvTgl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20-09-2017"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:id="@+id/textView3"
-        tools:text="Rp"
-        android:text="textView"
-        android:layout_marginEnd="11dp"
-        android:layout_below="@+id/textView2"
-        android:layout_toStartOf="@+id/textView2" />
+            android:drawableLeft="@drawable/ic_menu_camera" />
 
-    <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:id="@+id/textView2"
-        tools:text="28 Mei 2017"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rp 10.000"
+            android:id="@+id/txtvHarga"
+            android:textColor="@color/tema"
+            android:gravity="center"
+            android:layout_below="@id/txtvTgl"
+            android:textSize="50sp"/>
 
-    <com.rengwuxian.materialedittext.MaterialEditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Lokasi"
-        app:met_baseColor="@color/tema"
-        app:met_primaryColor="@color/tema"
-        app:met_errorColor="@color/tema"
-        app:met_floatingLabel="highlight"
-        app:met_iconLeft="@mipmap/ic_password"
-        android:id="@+id/regtxtPassword2"
-        android:layout_below="@+id/textView4"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="13dp" />
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Lokasi"
+            android:textSize="20sp"
+            android:background="null"
+            android:drawableLeft="@drawable/ic_menu_gallery"
+            android:layout_below="@+id/txtvHarga"/>
+    </RelativeLayout>
+
+    
 
 </RelativeLayout>

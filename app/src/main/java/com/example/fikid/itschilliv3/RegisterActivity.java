@@ -46,13 +46,32 @@ public class RegisterActivity extends Helper {
         btnDaftar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String struser = userdaftar.getText().toString().trim();
-                String stremail = emaildaftar.getText().toString().trim();
-                String strpas1 = pwdaftar1.getText().toString().trim();
-                String strpas2 = pwdaftar2.getText().toString().trim();
-                String strtelp = telpdaftar.getText().toString().trim();
 
-                if (!struser.isEmpty() && !stremail.isEmpty() && !strtelp.isEmpty() && !strpas1.isEmpty() && !strpas2.isEmpty()) {
+                if (Helper.isEmpty(userdaftar)){
+                    userdaftar.setError("Nama Lengkap masih kosong");
+                    userdaftar.requestFocus();
+                } else if (Helper.isEmpty(emaildaftar)){
+                    emaildaftar.setError("Email masih kosong");
+                    emaildaftar.requestFocus();
+                } else if (Helper.isEmpty(pwdaftar1)){
+                    pwdaftar1.setError("Password masih kosong");
+                    pwdaftar1.requestFocus();
+                } else if (Helper.isEmpty(pwdaftar2)){
+                    pwdaftar1.setError("Konfirmasi Password masih kosong");
+                    pwdaftar1.requestFocus();
+                }else if (Helper.isCompare(pwdaftar1, pwdaftar2)){
+                    pwdaftar2.setError("Password tidak cocok");
+                    pwdaftar2.requestFocus();
+                } else{
+                    String struser = userdaftar.getText().toString().trim();
+                    String stremail = emaildaftar.getText().toString().trim();
+                    String strpas1 = pwdaftar1.getText().toString().trim();
+                    String strtelp = telpdaftar.getText().toString().trim();
+
+                    simpanData(struser, stremail, strtelp, strpas1);
+                }
+
+                /*if (!struser.isEmpty() && !stremail.isEmpty() && !strtelp.isEmpty() && !strpas1.isEmpty() && !strpas2.isEmpty()) {
                     simpanData(struser, stremail, strtelp, strpas1);
                 } else if (struser.isEmpty()) {
                     userdaftar.setError("Nama Lengkap tidak boleh kosong");
@@ -69,7 +88,7 @@ public class RegisterActivity extends Helper {
                 }else if (strtelp.isEmpty()) {
                     telpdaftar.setError("Telp tidak boleh kosong");
                     telpdaftar.requestFocus();
-                }
+                }*/
             }
         });
     }

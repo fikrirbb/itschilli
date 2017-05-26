@@ -1,6 +1,7 @@
 package com.example.fikid.itschilliv3;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageView;
@@ -35,6 +36,19 @@ public class BeritaDet extends Helper {
         Bundle bundle = getIntent().getExtras();
         webview.getSettings().getJavaScriptEnabled();
         webview.loadUrl(bundle.getString("Link"));
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == android.R.id.home){
+            //end the activity
+            this.finish();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
 /*

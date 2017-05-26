@@ -17,7 +17,7 @@
         android:paddingLeft="20dp"
         android:paddingRight="20dp" >
         <ImageView
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:src="@drawable/logo"
@@ -30,7 +30,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:background="@color/colorAccent"
+            android:background="@color/white"
             android:hint="Nama Lengkap"
             android:inputType="textEmailAddress"
             android:padding="10dp"
@@ -43,7 +43,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:background="@color/colorAccent"
+            android:background="@color/white"
             android:hint="Email"
             android:inputType="textEmailAddress"
             android:padding="10dp"
@@ -56,7 +56,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:background="@color/colorAccent"
+            android:background="@color/white"
             android:hint="Nomor Telepon"
             android:inputType="textEmailAddress"
             android:padding="10dp"
@@ -68,7 +68,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:background="@color/colorAccent"
+            android:background="@color/white"
             android:hint="Password"
             android:inputType="textPassword"
             android:padding="10dp"
@@ -81,11 +81,11 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
-            android:background="@color/colorAccent"
+            android:background="@color/white"
             android:hint="Konfirmasi Password"
             android:inputType="textPassword"
             android:padding="10dp"
-            android:singleLine="true"
+            android:lines="1"
             android:textColor="@color/tema"
             android:textColorHint="@color/hint_input" />
 
@@ -95,7 +95,7 @@
             android:id="@+id/btnDaftar"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dip"
+            android:layout_marginTop="10dip"
             android:background="@color/btn_bg"
             android:text="Daftar"
             android:textColor="@color/tema" />
@@ -106,11 +106,11 @@
             android:id="@+id/btnLinkToLoginScreen"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dip"
+            android:layout_marginTop="10dip"
             android:background="@null"
             android:text="Sudah terdaftar! Masuk."
             android:textAllCaps="false"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/white"
             android:textSize="15dp" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
