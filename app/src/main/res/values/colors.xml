@@ -2,9 +2,11 @@
 <resources>
     <color name="colorPrimary">#F0575B</color>
     <color name="colorPrimaryDark">#B71C1C</color>
-    <color name="colorAccent">#FFFF</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="whitetrans">#90FFFFFF</color>
     <color name="tema">#F0575B</color>
     <color name="tema2">#2C3E50</color>
+    <color name="headtrans">#90B71C1C</color>
     <color name="dimgray">#696969</color>
     <color name="black">#000000</color>
     <color name="hint_input">#999999</color>
