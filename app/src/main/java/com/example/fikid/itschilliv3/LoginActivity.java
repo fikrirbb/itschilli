@@ -53,17 +53,18 @@ public class LoginActivity extends Helper {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String stremail = emaillogin.getText().toString().trim();
-                String strpas = pwlogin.getText().toString().trim();
 
-                if (!stremail.isEmpty() && !strpas.isEmpty()) {
-                    loginAksi(stremail, strpas);
-                } else if (stremail.isEmpty()) {
-                    emaillogin.setError("Email tidak boleh kosong");
+                if (Helper.isEmpty(emaillogin)){
+                    emaillogin.setError("Email masih kosong");
                     emaillogin.requestFocus();
-                } else if (strpas.isEmpty()) {
-                    pwlogin.setError("Password tidak boleh kosong");
+                } else if (Helper.isEmpty(pwlogin)){
+                    pwlogin.setError("Password masih kosong");
                     pwlogin.requestFocus();
+                } else {
+                    String stremail = emaillogin.getText().toString().trim();
+                    String strpas = pwlogin.getText().toString().trim();
+
+                    loginAksi(stremail, strpas);
                 }
             }
         });

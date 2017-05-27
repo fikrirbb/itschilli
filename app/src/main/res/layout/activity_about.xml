@@ -29,6 +29,10 @@
             android:id="@+id/imageView2"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true" />
+<<<<<<< HEAD
+=======
+
+>>>>>>> d83557d90dc2fc54f58b356c64e52ef1710db985
     <TextView
         android:text="Copyright 2017. IT's Chilli Developer. "
         android:layout_width="match_parent"
@@ -41,6 +45,7 @@
         android:layout_centerVertical="true"
         android:layout_marginTop="20dp"
          />
+<<<<<<< HEAD
 
         <TextView
             android:text="IT'S CHILLI adalah sistem informasi cabe yang bisa memudahkan petani untuk melihat harga cabe secara realtime dan mengetahui banyak  menginformasikan mengenai harga cabai"
@@ -57,4 +62,6 @@
             android:layout_marginTop="200dp" />
 >>>>>>> origin/master
 
+=======
+>>>>>>> d83557d90dc2fc54f58b356c64e52ef1710db985
     </RelativeLayout>
