@@ -3,39 +3,52 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/activity_about"
+    android:background="@color/colorPrimaryDark"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
     tools:context="com.example.fikid.itschilliv3.About">
+    <TextView
+        android:text="IT'S CHILLI"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp" />
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_centerHorizontal="true"
+            android:layout_height="140dp"
+            android:foregroundGravity="center"
             app:srcCompat="@drawable/logo"
             android:id="@+id/imageView2"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+            android:layout_above="@+id/aboutTextView3"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="60dp" />
     <TextView
-        android:text="Copyright 2017. IT's Chilli Developer. "
+        android:text="Copyright 2017"
         android:layout_width="match_parent"
-        android:textAlignment="textEnd"
+        android:textAlignment="center"
         android:textSize="15sp"
-        android:textColor="@color/tema"
+        android:textColor="@color/hint_input"
         android:layout_height="wrap_content"
         android:id="@+id/aboutTextView3"
-        android:layout_below="@+id/textView2"
+        android:layout_marginBottom="170dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:text="IT's Chilli Developer"
+        android:textAlignment="center"
+        android:textColor="@color/whitetrans"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="58dp" />
+        android:layout_marginTop="24dp" />
 
-        <TextView
-            android:text="IT'S CHILLI adalah sistem informasi cabe yang bisa memudahkan petani untuk melihat harga cabe secara realtime dan mengetahui banyak  menginformasikan mengenai harga cabai"
-            android:layout_width="wrap_content"
-            android:textColor="@color/dakred"
-            android:textStyle="bold"
-            android:textAlignment="center"
-            android:textSize="17sp"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView2"
-            android:layout_below="@+id/imageView2"
-            android:layout_alignParentStart="true" />
+
     </RelativeLayout>
