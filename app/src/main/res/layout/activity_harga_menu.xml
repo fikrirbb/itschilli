@@ -13,6 +13,7 @@
     tools:context="com.example.fikid.itschilliv3.HargaMenu">
 
     <RelativeLayout
+        android:id="@+id/cuy"
         android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -45,11 +46,17 @@
             android:layout_centerHorizontal="true"
             android:text="Lokasi"
             android:textSize="20sp"
-            android:background="@color/btn_bg"
+            android:background="@null"
+            android:id="@+id/btnLok"
             android:drawableLeft="@drawable/ic_menu_gallery"
             android:layout_below="@+id/txtvHarga"/>
     </RelativeLayout>
 
-    
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:id="@+id/itemCabai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cuy"></android.support.v7.widget.RecyclerView>
 
 </RelativeLayout>
