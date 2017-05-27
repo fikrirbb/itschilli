@@ -29,13 +29,9 @@
         <activity
             android:name=".HargaMenu"
             android:label="Harga Cabai" />
-<<<<<<< HEAD
-        <activity android:name=".BeritaDet" />
-=======
-        <activity android:name=".BeritaDet"
-
+        <activity
+            android:name=".BeritaDet"
             android:label="Detail Berita"/>
->>>>>>> d83557d90dc2fc54f58b356c64e52ef1710db985
         <activity
             android:name=".ListBerita"
             android:label="Berita Terbaru" />

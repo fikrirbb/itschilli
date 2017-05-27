@@ -45,7 +45,7 @@
             android:layout_centerHorizontal="true"
             android:text="Lokasi"
             android:textSize="20sp"
-            android:background="null"
+            android:background="@color/btn_bg"
             android:drawableLeft="@drawable/ic_menu_gallery"
             android:layout_below="@+id/txtvHarga"/>
     </RelativeLayout>
