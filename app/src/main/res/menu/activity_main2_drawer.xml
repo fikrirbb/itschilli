@@ -29,7 +29,7 @@
                 android:title="Info" />
             <item
                 android:id="@+id/nav_logout"
-                android:icon="@mipmap/ic_info"
+                android:icon="@mipmap/ic_logout"
                 android:title="Logout" />
         </menu>
     </item>

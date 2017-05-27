@@ -12,4 +12,5 @@
     <color name="black">#000000</color>
     <color name="hint_input">#999999</color>
     <color name="btn_bg">#eceef1</color>
+    <color name="dakred">#8B0000</color>
 </resources>
