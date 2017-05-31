@@ -15,11 +15,6 @@
         <activity
             android:name=".SplashScreen"
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".ActivityMain"
@@ -33,7 +28,9 @@
             android:label="Detail Berita" />
         <activity
             android:name=".ListBerita"
-            android:label="Berita Terbaru" />
+            android:label="Berita Terbaru" >
+
+        </activity>
         <activity
             android:name=".LoginActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
@@ -43,7 +40,13 @@
         <activity
             android:name=".About"
             android:label="Tentang Kami" />
-        <activity android:name=".CariLokasi"></activity>
+        <activity android:name=".CariLokasi">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
