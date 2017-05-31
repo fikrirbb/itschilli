@@ -24,7 +24,7 @@
         <activity
             android:name=".ActivityMain"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".HargaMenu"
             android:label="Harga Cabai" />
@@ -36,14 +36,15 @@
             android:label="Berita Terbaru" />
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".RegisterActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".About"
             android:label="Tentang Kami" />
-        <activity android:name=".CariLokasi"></activity>
+        <activity android:name=".CariLokasi" />
+        <activity android:name=".Graph"></activity>
     </application>
 
 </manifest>
