@@ -25,12 +25,15 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 
 public class CariLokasi extends AppCompatActivity implements Spinner.OnItemSelectedListener{
 
     private Spinner spinner;
+    private TextView tglini;
     private ArrayList<String> lokasi;
 
     private JSONArray result;
@@ -41,6 +44,12 @@ public class CariLokasi extends AppCompatActivity implements Spinner.OnItemSelec
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cari_lokasi);
+
+        String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
+        // textView is the TextView view that should display it
+
+        tglini = (TextView) findViewById(R.id.tglini);
+        tglini.setText(currentDateTimeString);
 
         lokasi = new ArrayList<String>();
 
